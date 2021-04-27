@@ -1,0 +1,24 @@
+<section class="posttop">
+  <div class="container">
+    <div class="top-wrapper">
+    <h2 class="edit-top">投稿一覧</h2>
+      <% @posts.each do |post| %>
+        <% @user = post.user %>
+          <div class="posttop-wrapper">
+            <div class="posttop-user">
+              <img class="posttop-img" src="<%= "/#{@user.image_name}" %>" alt="">
+              <div class="user-name">
+                <%= link_to(@user.name, "/user/#{@user.id}") %>
+              </div>
+            </div>
+            <div class="posttop-post">
+              <%= post.content %>
+            </div>
+            <div class="created">
+              <%= post.created_at %>
+            </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

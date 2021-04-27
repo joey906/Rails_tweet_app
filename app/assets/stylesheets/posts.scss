@@ -1,0 +1,89 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/*==================
+new
+==================*/
+ 
+.postnew {
+    padding-top: 200px;
+}
+
+.textarea {
+   width: 100%;
+}
+
+.postnew_top {
+    font-size: 45px;
+    color: rgb(194, 191, 191);
+    padding: 0 0 20px 20px;
+}
+
+.post-wrapper {
+ box-shadow: 1px 1px 1px 1px gray;
+ padding: 50px 50px;
+ height: 400px;
+}
+
+.post-content {
+    text-align: center;
+}
+
+.post-form {
+    height: 230px;
+}
+
+.post-btn {
+    float: right;
+    margin: 30px 10px;
+    width: 150px;
+    font-size: 18px;
+    background-color: rgb(78, 201, 241);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid  rgb(78, 201, 241);
+    cursor: pointer;
+}
+
+/*==================
+post-top
+==================*/
+.top-wrapper {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.posttop-wrapper {
+    display: flex;
+    box-shadow: 1px 1px 1px 1px gray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.posttop-user {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.user-name {
+    margin-left: 40px;
+    padding-top: 5px;
+}
+
+.posttop-post {
+    width: 60%;
+    padding-top: 20px;
+}
+
+.posttop-img {
+    width: 60%;
+    border-radius: 999px;
+    display: block;
+}
+
+.created {
+    padding-top: 20px;
+    color: rgb(126, 125, 125);
+    
+}

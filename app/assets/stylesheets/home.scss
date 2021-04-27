@@ -1,0 +1,162 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  header, footer, nav, section, article, aside, figure, figcaption {
+    display: block;
+  }
+  
+  body {
+    line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  ol, ul {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  .container {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .clear::after {
+      content: "";
+      display: block;
+      clear: both;
+  }
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+  /*=================
+  header
+  =================*/
+  header {
+      height: 65px;
+      background-color: rgb(226, 224, 224);
+      position: fixed;
+      z-index: 5;
+      width: 100%;
+  }
+
+  .header-wrapper {
+      line-height: 65px;
+  }
+
+  .header-left {
+      float: left;
+  }
+
+  .header-right {
+      float: right;
+  }
+
+  .header-ul {
+      display: flex;
+      
+  }
+
+  .header-li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .active {
+      display: block;
+  }
+
+  /*=================
+  top
+  =================*/
+
+  .top {
+      background-image: url(/cosmos.jpg);
+      background-size: cover;
+      height: 430px;
+      color: white;
+      z-index:20;
+  }
+
+  .top-text {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 150px;
+  }
+
+  .top-p {
+      text-align: center;
+      padding-top: 100px;
+  }
+
+  /*=================
+  top-about
+  =================*/
+
+  .about {
+      margin: 60px 0;
+  }
+
+  .about-thema {
+      font-size: 24px;
+      padding: 20px 10px;
+  }
+
+  .about-wrapper {
+      display: flex;
+  }
+
+  .about-right {
+      width: 48%;
+      padding: 2px;
+      border: 1px solid rgb(180, 177, 177);
+      border-radius: 4px;
+  }
+
+  .about-right img {
+      border-radius: 4px;
+  }
+
+   .about-left {
+      padding: 20px;
+      width: 50%;
+   }
+
+   .about-h2 {
+       font-size: 20px;
+       color: rgb(250, 136, 155);
+       margin-bottom: 30px;
+   }
+
+   .about-text {
+       line-height: 30px;
+       letter-spacing: 1px;
+   }
+
+  

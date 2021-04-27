@@ -1,0 +1,63 @@
+<section class="show">
+  <div class="container">
+    <div class="show-content">
+      <div class="show-img">
+        <img class="default_image" src="<%= "/#{@user.image_name}" %>">
+      </div>
+      <div class="show-name">
+        <%= @user.name %>
+        <div class="introduce">
+          <%= @user.introduce %>
+        </div>
+        <div class="edit">
+          <% if @current_user.id == @user.id %>
+            <%= link_to("edit","/user/#{@user.id}/edit")%>
+          <% end %>
+          <% if @current_user.id != @user.id %>
+            <%= link_to("友達になる","/friends/#{@user.id}/create", {method: :post}) %>
+          <% end %>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <% if @current_user.id == @user.id %>
+    <%= link_to("友達","/friends/all") %>
+    <%= link_to("自分の投稿","/user/#{@user.id}") %>
+    <%= link_to("友達登録されている","/friends/friended_by") %>
+  <% end %>
+</div>
+
+<section class="self-post">
+  <div class="container">
+    <div class="self-post-wrapper">
+    <% @posts.each do |post| %>
+
+      <div class="posttop-wrapper">
+            <div class="posttop-user">
+              <img class="posttop-img" src="<%= "/#{@user.image_name}" %>" alt="">
+              <div class="user-name">
+                <%= @user.name %>
+              </div>
+            </div>
+            <div class="posttop-post">
+              <%= post.content %>
+            </div>
+            <div class="created">
+              <%= post.created_at %>
+              <div class="remove">
+              <% if @current_user.id == @user.id %>
+                <%= link_to("削除","/posts/#{post.id}/destroy", {method: :post}) %>
+              <% end %>
+              </div>
+            </div>
+        </div>
+
+      
+    <% end %>
+    </div>
+  </div>
+</section>

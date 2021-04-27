@@ -1,0 +1,28 @@
+<section class="chat">
+  <div class="container">
+
+  <% if @chats %>
+    <% @chats.each do |chat| %>
+      <%= chat.chat_content %>
+      <br>
+    <% end %>
+  <% end %>
+  <% if @chats_by %>
+      <% @chats_by.each do |chat| %>
+        <%= chat.chat_content %>
+       <br>
+      <% end %>
+  <% end %>
+  
+
+  <%= form_tag("/friends/#{@user.id}/chat_deco") do %>
+
+  
+    <div class="form">
+      <textarea name="chat" rows="10" cols="60">
+      </textarea>   
+      <input  name="chat_button" type="submit" value="送信">
+    </div>
+  <% end %>
+  </div>
+</section>

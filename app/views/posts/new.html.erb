@@ -1,0 +1,17 @@
+<section class="postnew">
+  <div class="container">
+  <h2 class="postnew_top">投稿する</h2>
+  <div class="post-wrapper">
+  
+  <div class="post-content">
+    
+    <%= form_tag("/posts/top") do %>
+    <form class="post-form">
+      <textarea class="textarea" name="content" rows="12 "cols="80"></textarea>
+      <button class="btn post-btn" type="submit" value="投稿">投稿</button>
+    </form>
+    <% end %>
+  </div>
+  </div>
+  </div>
+</section>

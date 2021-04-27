@@ -1,0 +1,17 @@
+
+<section class="user_all">
+<div class="container">
+  <% @users.each do |user| %>
+    <div class="show-content">
+      <div class="user_all_img">
+        <img class="imagename" src="<%= "/#{user.image_name}" %>">
+      </div>
+      <div class="user_all_name">
+        <%= link_to(user.name, "/user/#{user.id}") %>
+      </div>
+ 
+    </div>
+    
+  <% end %>
+</div>
+</section>

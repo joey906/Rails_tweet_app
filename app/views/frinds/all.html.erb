@@ -1,0 +1,58 @@
+<section class="show">
+  <div class="container">
+    <div class="show-content">
+      <div class="show-img">
+        <img class="default_image" src="<%= "/#{@user.image_name}" %>">
+      </div>
+      <div class="show-name">
+        <%= @user.name %>
+        <div class="introduce">
+          <%= @user.introduce %>
+        </div>
+        <div class="edit">
+          <% if @current_user.id == @user.id %>
+            <%= link_to("edit","/user/#{@user.id}/edit")%>
+          <% end %>
+          <% if @current_user.id != @user.id %>
+            <%= link_to("友達になる","/friends/#{@user.id}/all") %>
+          <% end %>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <% if @current_user.id == @user.id %>
+    <%= link_to("友達","/friends/all") %>
+    <%= link_to("自分の投稿","/user/#{@user.id}") %>
+    <%= link_to("友達登録されている","/friends/friended_by") %>
+  <% end %>
+</div>
+
+
+
+<section class="self-post">
+  <div class="container">
+    <div class="self-post-wrapper">
+    <% @friends.each do |friend| %>
+
+      <div class="posttop-wrapper">
+            <div class="posttop-user">
+              <img class="posttop-img" src="<%= "/#{friend.user_friend.image_name}" %>" alt="">
+              <div class="user-name">
+                <%= friend.user_friend.name %>
+              </div>
+            </div>
+            <div class="created">
+            <%= link_to("チャット", "/friends/#{friend.user_friend.id}") %>
+            </div>
+            
+        </div>
+
+      
+    <% end %>
+    </div>
+  </div>
+</section>

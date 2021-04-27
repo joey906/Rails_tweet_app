@@ -1,0 +1,132 @@
+/*=================
+  login
+  =================*/
+.login {
+  background-image: url(/cosmos.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+.form-s {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin: 0 0 0 300px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.form {
+  text-align: center;
+  padding-top: 100px;
+}
+
+input {
+  margin: 10px;
+}
+
+input[type="password"], input[type="name"] {
+  margin-left: 26px;
+}
+
+input[type="text"] {
+  margin-left: 27px;
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+}
+
+/*=================
+  test
+  =================*/
+.neko {
+  margin-top: 200px;
+}
+
+/*=================
+  top
+  =================*/
+.show {
+  background-image: url(/cosmos.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+.show-content {
+  padding-top: 100px;
+  display: flex;
+}
+
+.show-img {
+  width: 48%;
+}
+
+.default_image {
+  width: 90%;
+  border-radius: 999px;
+  padding: 1px;
+  border: 1px solid white;
+}
+
+.show-name {
+  font-size: 32px;
+  color: #f378ca;
+  width: 48%;
+  margin-left: 20px;
+}
+
+.edit a {
+  color: white;
+}
+
+.introduce {
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px 1px gray;
+  color: black;
+}
+
+/*=================
+  all
+  =================*/
+.imagename {
+  width: 100%;
+  border-radius: 999px;
+}
+
+.user_all_img {
+  width: 30%;
+}
+
+.user_all_name {
+  width: 80%;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+/*=================
+  edit
+  =================*/
+.edit-wrapper {
+  padding-top: 100px;
+}
+
+.edit-top {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: #b1acac;
+}
+
+/*=================
+  self-post
+  =================*/
+.self-post-wrapper {
+  padding: 20px;
+  margin: 50px 0;
+}
